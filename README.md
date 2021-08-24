@@ -1,4 +1,18 @@
-# LBAW's PIU
+# Tokyo Drift Auction House
+
+- **Project name:** Tokyo Drift Auction House
+- **Short description:** A website 
+- **Environment:** Web
+- **Tools:** HTML/CSS, Bootstrap, Javascript, PHP, Laravel, PostgreSQL, pgAdmin, Docker
+- **Institution:** [FEUP](https://sigarra.up.pt/feup/en/web_page.Inicial)
+- **Course:** [LBAW](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=459490) (Database and Web Applications Laboratory)
+- **Project grade:** 19.2/20.0
+- **Group:** G74
+- **Group members:**
+    - [Diogo Miguel Ferreira Rodrigues](https://github.com/dmfrodrigues) (up201806429@fe.up.pt)
+    - [João António Cardoso Vieira e Basto de Sousa](https://github.com/JoaoASousa) (up201806613@fe.up.pt)
+    - [Rafael Soares Ribeiro](https://github.com/up201806330) (up201806330@fe.up.pt)
+    - [Leonor Martins de Sousa](https://github.com/leonormsousa) (up201705377@fe.up.pt)
 
 ## Installation
 
