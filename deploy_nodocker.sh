@@ -5,16 +5,18 @@ if ! [[ $# -eq 2 ]] ; then
     exit -1
 fi
 
-# Install composer
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-
-php composer.phar update
-php artisan config:cache
 cat .env_production > .env
 env >> .env
 echo "APP_URL=$1" >> .env
 echo "DB_DATABASE=lbaw2174" >> .env
 echo "DB_USERNAME=lbaw2174" >> .env
 echo "DB_PASSWORD=$2" >> .env
+
+# Install composer
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+php composer.phar update
+
+php artisan config:cache
