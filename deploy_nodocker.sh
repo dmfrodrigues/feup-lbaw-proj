@@ -5,6 +5,7 @@ if ! [[ $# -eq 1 ]] ; then
     exit -1
 fi
 
+php composer.phar update
 php artisan config:cache
 cat .env_production > .env
 env >> .env
