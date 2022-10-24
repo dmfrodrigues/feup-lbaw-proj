@@ -6,5 +6,6 @@ if ! [[ $# -eq 1 ]] ; then
 fi
 
 php artisan config:cache
+cat .env_production > .env
 env >> .env
 echo "APP_URL=$1" >> .env

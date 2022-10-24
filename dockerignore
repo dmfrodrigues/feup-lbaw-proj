@@ -3,6 +3,6 @@ upload_image.sh
 README.md
 zip_server.sh
 deploy_nodocker.sh
-.git/*
-etc/*
-tests/*
+.git
+etc
+tests
