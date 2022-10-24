@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if ! [[ $# -eq 1 ]] ; then
-    echo 'This script requires 1 arg, the APP_URL'
+if ! [[ $# -eq 2 ]] ; then
+    echo 'This script requires 2 args, the APP_URL and DB_PASSWORD'
     exit -1
 fi
 
@@ -15,3 +15,6 @@ php artisan config:cache
 cat .env_production > .env
 env >> .env
 echo "APP_URL=$1" >> .env
+echo "DB_DATABASE=lbaw2174" >> .env
+echo "DB_USERNAME=lbaw2174" >> .env
+echo "DB_PASSWORD=$2" >> .env
