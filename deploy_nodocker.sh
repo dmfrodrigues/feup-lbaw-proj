@@ -5,6 +5,11 @@ if ! [[ $# -eq 1 ]] ; then
     exit -1
 fi
 
+# Install composer
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
 php composer.phar update
 php artisan config:cache
 cat .env_production > .env
